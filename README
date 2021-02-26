@@ -1,5 +1,8 @@
-#change repo name if needed
-#create .sh file
-#make it executable with chmod +x pushcsv.sh
-#cronjob
+Change repo name if needed
+
+Make .sh executable with chmod +x pushcsv.sh in pushcsv dir
+
+crontab -e
+0 17 * * * /home/pi/pushcsv/pushcsv.sh
+
 #anacronjob
