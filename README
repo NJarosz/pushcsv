@@ -1,0 +1,5 @@
+#change repo name if needed
+#create .sh file
+#make it executable with chmod +x pushcsv.sh
+#cronjob
+#anacronjob
