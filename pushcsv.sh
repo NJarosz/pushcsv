@@ -3,11 +3,11 @@
 
 
 cd /home/pi/Documents/CSV/
-cp $(ls -1t | head -1) /home/pi/tj_counter
-git -C /home/pi/tj_counter/ add .
-git -C /home/pi/tj_counter/ commit -m "csv"
-git -C /home/pi/tj_counter/ push
-rm /home/pi/tj_counter/*.csv
-git -C /home/pi/tj_counter/ add .
-git -C /home/pi/tj_counter/ commit -m "delete csv"
+cp $(ls -1t | head -1) /home/pi/pushcsv/
+git -C /home/pi/pushcsv/ add .
+git -C /home/pi/pushcsv/ commit -m "csv"
+git -C /home/pi/pushcsv/ push
+rm /home/pi/pushcsv/*.csv
+git -C /home/pi/pushcsv/ add .
+git -C /home/pi/pushcsv/ commit -m "delete csv"
 
