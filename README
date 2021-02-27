@@ -3,6 +3,9 @@ Change repo name if needed
 Make .sh executable with chmod +x pushcsv.sh in pushcsv dir
 
 crontab -e
-0 17 * * * /home/pi/pushcsv/pushcsv.sh
+0 17 * * * /home/pi/pushcsv/pushcsv.sh #everyday at 5pm
+0 12 * * 7 /home/pi/pushcsv/del.sh #every sunday at noon
 
-#anacronjob
+sudo nano /etc/anacrontab
+1   2   pushcsv   /home/pi/pushcsv/pushcsv.sh
+7   8   deletecsv /home/pi/pushcsv.del.sh
